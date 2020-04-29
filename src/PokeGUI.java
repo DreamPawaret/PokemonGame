@@ -17,7 +17,7 @@ public class PokeGUI extends JFrame {
         JLabel t1 = new JLabel();
         t1.setText("PokémonGame");
         t1.setBounds(10,20,400,100);
-        t1.setFont(new java.awt.Font("Pokemon Solid",1,50));
+        t1.setFont(new java.awt.Font("Tahoma",1,50));
 
         JButton b1 = new JButton();
         b1.addActionListener(new ActionListener() {
@@ -29,7 +29,7 @@ public class PokeGUI extends JFrame {
         });
         b1.setBounds(20,480,150,40);
         b1.setText("Pokédex");
-        b1.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
 
         JButton b2 = new JButton();
         b2.addActionListener(new ActionListener() {
@@ -41,7 +41,7 @@ public class PokeGUI extends JFrame {
         });
         b2.setBounds(20,530,150,40);
         b2.setText("Item");
-        b2.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b2.setFont(new java.awt.Font("Tahoma",1,18));
 
         JButton b3 = new JButton();
         b3.addActionListener(new ActionListener() {
@@ -53,7 +53,7 @@ public class PokeGUI extends JFrame {
         });
         b3.setBounds(190,480,150,40);
         b3.setText("Battle");
-        b3.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b3.setFont(new java.awt.Font("Tahoma",1,18));
 
         JButton b4 = new JButton();
         b4.addActionListener(new ActionListener() {
@@ -65,7 +65,7 @@ public class PokeGUI extends JFrame {
         });
         b4.setBounds(190,530,150,40);
         b4.setText("Shop");
-        b4.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b4.setFont(new java.awt.Font("Tahoma",1,18));
 
         JButton b5 = new JButton();
         b5.addActionListener(new ActionListener() {
@@ -77,7 +77,7 @@ public class PokeGUI extends JFrame {
         });
         b5.setBounds(29,580,300,40);
         b5.setText("Quit Game");
-        b5.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b5.setFont(new java.awt.Font("Tahoma",1,18));
 
         frame.add(t1);
         frame.add(b1);
@@ -100,7 +100,7 @@ public class PokeGUI extends JFrame {
         JLabel t1 = new JLabel();
         t1.setText("Pokédex");
         t1.setBounds(10,20,400,100);
-        t1.setFont(new java.awt.Font("Pokemon Solid",1,50));
+        t1.setFont(new java.awt.Font("Tahoma",1,50));
 
         JButton b2 = new JButton();
         b2.addActionListener(new ActionListener() {
@@ -112,7 +112,7 @@ public class PokeGUI extends JFrame {
         });
         b2.setBounds(200,130,140,35);
         b2.setText("Pikachu");
-        b2.setFont(new java.awt.Font("Sukkhumvit",1,16));
+        b2.setFont(new java.awt.Font("Tahoma",1,16));
 
         JButton b3 = new JButton();
         b3.addActionListener(new ActionListener() {
@@ -124,7 +124,7 @@ public class PokeGUI extends JFrame {
         });
         b3.setBounds(200,210,140,35);
         b3.setText("Balbasaur");
-        b3.setFont(new java.awt.Font("Sukkhumvit",1,16));
+        b3.setFont(new java.awt.Font("Tahoma",1,16));
 
         JButton b4 = new JButton();
         b4.addActionListener(new ActionListener() {
@@ -136,7 +136,7 @@ public class PokeGUI extends JFrame {
         });
         b4.setBounds(200,290,140,35);
         b4.setText("Charmander");
-        b4.setFont(new java.awt.Font("Sukkhumvit",1,16));
+        b4.setFont(new java.awt.Font("Tahoma",1,16));
 
         JButton b5 = new JButton();
         b5.addActionListener(new ActionListener() {
@@ -148,7 +148,7 @@ public class PokeGUI extends JFrame {
         });
         b5.setBounds(200,370,140,35);
         b5.setText("Squirtle");
-        b5.setFont(new java.awt.Font("Sukkhumvit",1,16));
+        b5.setFont(new java.awt.Font("Tahoma",1,16));
 
         JButton b6 = new JButton();
         b6.addActionListener(new ActionListener() {
@@ -160,7 +160,7 @@ public class PokeGUI extends JFrame {
         });
         b6.setBounds(200,450,140,35);
         b6.setText("Magikarp");
-        b6.setFont(new java.awt.Font("Sukkhumvit",1,16));
+        b6.setFont(new java.awt.Font("Tahoma",1,16));
 
         JButton b1 = new JButton();
         b1.addActionListener(new ActionListener() {
@@ -172,7 +172,7 @@ public class PokeGUI extends JFrame {
         });
         b1.setBounds(29,580,300,40);
         b1.setText("Back");
-        b1.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
 
         frame.add(t1);
         frame.add(b1);
@@ -197,7 +197,7 @@ public class PokeGUI extends JFrame {
         JLabel t1 = new JLabel();
         t1.setText("Shop");
         t1.setBounds(10,20,400,100);
-        t1.setFont(new java.awt.Font("Pokemon Solid",1,50));
+        t1.setFont(new java.awt.Font("Tahoma",1,50));
 
         JButton b1 = new JButton();
         b1.addActionListener(new ActionListener() {
@@ -209,7 +209,7 @@ public class PokeGUI extends JFrame {
         });
         b1.setBounds(29,580,300,40);
         b1.setText("Back");
-        b1.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
 
         frame.add(t1);
         frame.add(b1);
@@ -229,7 +229,7 @@ public class PokeGUI extends JFrame {
         JLabel t1 = new JLabel();
         t1.setText("Item");
         t1.setBounds(10,20,400,100);
-        t1.setFont(new java.awt.Font("Pokemon Solid",1,50));
+        t1.setFont(new java.awt.Font("Tahoma",1,50));
 
         JButton b1 = new JButton();
         b1.addActionListener(new ActionListener() {
@@ -241,7 +241,7 @@ public class PokeGUI extends JFrame {
         });
         b1.setBounds(29,580,300,40);
         b1.setText("Back");
-        b1.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
 
         frame.add(t1);
         frame.add(b1);
@@ -261,7 +261,7 @@ public class PokeGUI extends JFrame {
         JLabel t1 = new JLabel();
         t1.setText("Battle");
         t1.setBounds(10,20,400,100);
-        t1.setFont(new java.awt.Font("Pokemon Solid",1,50));
+        t1.setFont(new java.awt.Font("Tahoma",1,50));
 
         JButton b1 = new JButton();
         b1.addActionListener(new ActionListener() {
@@ -273,7 +273,7 @@ public class PokeGUI extends JFrame {
         });
         b1.setBounds(29,580,300,40);
         b1.setText("Back");
-        b1.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
 
         frame.add(t1);
         frame.add(b1);
@@ -293,7 +293,7 @@ public class PokeGUI extends JFrame {
         JLabel t1 = new JLabel();
         t1.setText("Pikachu");
         t1.setBounds(10,20,400,100);
-        t1.setFont(new java.awt.Font("Pokemon Solid",1,30));
+        t1.setFont(new java.awt.Font("Tahoma",1,30));
 
         JButton b1 = new JButton();
         b1.addActionListener(new ActionListener() {
@@ -305,9 +305,9 @@ public class PokeGUI extends JFrame {
         });
         b1.setBounds(29,580,300,40);
         b1.setText("Back");
-        b1.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
 
-        
+
 
         frame.add(t1);
         frame.add(b1);
@@ -327,7 +327,7 @@ public class PokeGUI extends JFrame {
         JLabel t1 = new JLabel();
         t1.setText("Balbasaur");
         t1.setBounds(10,20,400,100);
-        t1.setFont(new java.awt.Font("Pokemon Solid",1,30));
+        t1.setFont(new java.awt.Font("Tahoma",1,30));
 
         JButton b1 = new JButton();
         b1.addActionListener(new ActionListener() {
@@ -339,7 +339,7 @@ public class PokeGUI extends JFrame {
         });
         b1.setBounds(29,580,300,40);
         b1.setText("Back");
-        b1.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
 
         frame.add(t1);
         frame.add(b1);
@@ -359,7 +359,7 @@ public class PokeGUI extends JFrame {
         JLabel t1 = new JLabel();
         t1.setText("Charmander");
         t1.setBounds(10,20,400,100);
-        t1.setFont(new java.awt.Font("Pokemon Solid",1,30));
+        t1.setFont(new java.awt.Font("Tahoma",1,30));
 
         JButton b1 = new JButton();
         b1.addActionListener(new ActionListener() {
@@ -371,7 +371,7 @@ public class PokeGUI extends JFrame {
         });
         b1.setBounds(29,580,300,40);
         b1.setText("Back");
-        b1.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
 
         frame.add(t1);
         frame.add(b1);
@@ -391,7 +391,7 @@ public class PokeGUI extends JFrame {
         JLabel t1 = new JLabel();
         t1.setText("Squirtle");
         t1.setBounds(10,20,400,100);
-        t1.setFont(new java.awt.Font("Pokemon Solid",1,30));
+        t1.setFont(new java.awt.Font("Tahoma",1,30));
 
         JButton b1 = new JButton();
         b1.addActionListener(new ActionListener() {
@@ -403,7 +403,7 @@ public class PokeGUI extends JFrame {
         });
         b1.setBounds(29,580,300,40);
         b1.setText("Back");
-        b1.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
 
         frame.add(t1);
         frame.add(b1);
@@ -423,7 +423,7 @@ public class PokeGUI extends JFrame {
         JLabel t1 = new JLabel();
         t1.setText("Magikarp");
         t1.setBounds(10,20,400,100);
-        t1.setFont(new java.awt.Font("Pokemon Solid",1,30));
+        t1.setFont(new java.awt.Font("Tahoma",1,30));
 
         JButton b1 = new JButton();
         b1.addActionListener(new ActionListener() {
@@ -435,7 +435,7 @@ public class PokeGUI extends JFrame {
         });
         b1.setBounds(29,580,300,40);
         b1.setText("Back");
-        b1.setFont(new java.awt.Font("Pokemon Solid",1,18));
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
 
         frame.add(t1);
         frame.add(b1);
