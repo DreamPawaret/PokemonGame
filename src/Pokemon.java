@@ -18,6 +18,10 @@ public abstract  class Pokemon {
         System.out.println("Pokemon: "+name+" hp:"+hp+" cp:"+cp);
     }
 
+    public void Trainer(){
+
+    }
+
     public String getStatus(){
         return name+" "+hp;
     }
