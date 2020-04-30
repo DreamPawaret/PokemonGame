@@ -1,35 +1,35 @@
 public class GamePlay {
-    private TrainerPlay trainerPlay;
+    private PokemonTrainer pokemonTrainer;
     private Enermy enermy;
 
     public GamePlay(String name){
-        trainerPlay = new TrainerPlay(name);
+        pokemonTrainer = new PokemonTrainer(name);
     }
 
     public String getTName(){
-        return trainerPlay.getName();
+        return pokemonTrainer.getName();
     }
 
     public void setTName(String name){
-        trainerPlay.setName(name);
+        pokemonTrainer.setName(name);
     }
 
     public Pokemon getPokemon(int index) {
-        return trainerPlay.getPokemon(index);
+        return pokemonTrainer.getPokemon(index);
     }
 
-    public void setPokemon(int index, Pokemon pokemon){
-        trainerPlay.setPokemon(index,pokemon);
+    public void setPokemon(int n, Pokemon pokemon){
+        pokemonTrainer.setPokemon(n,pokemon);
     }
 
     public void addPokemon(Pokemon monster){
-        trainerPlay.addPokemon(monster);
+        pokemonTrainer.addPokemon(monster);
     }
 
-    public void setPokemonName(String name, int index) {
-        Pokemon monster = trainerPlay.getPokemon(index);
+    public void setPokemonName(String name, int n) {
+        Pokemon monster = pokemonTrainer.getPokemon(n);
         monster.setName(name);
-        trainerPlay.setPokemon(index, monster);
+        pokemonTrainer.setPokemon(n, monster);
     }
 
 
