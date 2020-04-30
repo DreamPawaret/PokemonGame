@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
-public abstract class Trainer {
+public abstract class PokemonTrainer {
     protected String name;
 
     protected ArrayList<Pokemon> bag = new ArrayList<Pokemon>();
 
-    public Trainer(){
+    public PokemonTrainer(){
 
     }
 
