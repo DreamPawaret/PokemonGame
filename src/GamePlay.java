@@ -65,11 +65,6 @@ public class GamePlay {
         trainerPlay.setPokemon(index, pokemon);
         return fd;
     }
-
-    public void makeEnemy() {
-        Pokemon pokemon = enermy.getPokemon(0);
-        pokemon.fullHP();
-        enermy.set(pokemon);
-    }
+    
 
 }
