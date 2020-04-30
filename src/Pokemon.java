@@ -30,6 +30,7 @@ public abstract  class Pokemon {
         this.name = name;
     }
 
+
     public String toString(){
         return name;
     }

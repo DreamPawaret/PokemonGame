@@ -24,7 +24,6 @@ public class PokeGUI extends JFrame {
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                game = new GamePlay(inputName.getText());
                 frame.removeAll();
                 frame.setVisible(false);
                 main();

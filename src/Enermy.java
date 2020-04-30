@@ -1,4 +1,4 @@
-public class Enermy extends Trainer {
+public class Enermy extends PokemonTrainer {
 
 
     public Pokemon get(){

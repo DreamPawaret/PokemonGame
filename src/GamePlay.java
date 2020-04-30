@@ -2,10 +2,6 @@ public class GamePlay {
     private PokemonTrainer pokemonTrainer;
     private Enermy enermy;
 
-    public GamePlay(String name){
-       
-    }
-
     public String getTName(){
         return pokemonTrainer.getName();
     }
@@ -14,8 +10,8 @@ public class GamePlay {
         pokemonTrainer.setName(name);
     }
 
-    public Pokemon getPokemon(int index) {
-        return pokemonTrainer.getPokemon(index);
+    public Pokemon getPokemon(int n) {
+        return pokemonTrainer.getPokemon(n);
     }
 
     public void setPokemon(int n, Pokemon pokemon){
@@ -31,12 +27,5 @@ public class GamePlay {
         monster.setName(name);
         pokemonTrainer.setPokemon(n, monster);
     }
-
-
-    public int getBag(){
-        return pokemonTrainer.getBag();
-    }
-
-
 
 }
