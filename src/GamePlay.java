@@ -3,7 +3,7 @@ public class GamePlay {
     private Enermy enermy;
 
     public GamePlay(String name){
-        pokemonTrainer = new PokemonTrainer(name);
+       
     }
 
     public String getTName(){
@@ -34,37 +34,9 @@ public class GamePlay {
 
 
     public int getBag(){
-        return trainerPlay.getBag();
+        return pokemonTrainer.getBag();
     }
 
-    public int getCoin(){
-        return trainerPlay.getCoin();
-    }
-
-    public int getFood(){
-        return trainerPlay.getFood();
-    }
-
-    public int getUpHP(int index){
-        Pokemon pokemon =trainerPlay.getPokemon(index);
-        return pokemon.getUpHP();
-    }
-
-
-    public void decCoin(int cn){
-        trainerPlay.decCoin(cn);
-    }
-
-    public void decFood(int fd){
-        trainerPlay.decFood(fd);
-    }
-
-    public boolean feed(int index) {
-        Pokemon pokemon = getPokemon(index);
-        boolean fd = pokemon.feed(pokemon.getUpHP());
-        trainerPlay.setPokemon(index, pokemon);
-        return fd;
-    }
 
 
 }
