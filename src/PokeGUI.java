@@ -7,40 +7,7 @@ import java.awt.event.ActionListener;
 public class PokeGUI extends JFrame {
 
     private GamePlay game;
-
-    public void start(){
-        JFrame frame = new JFrame();
-        frame.setTitle("Pokemon Game");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(375, 667);
-        frame.setResizable(false);
-
-        JPanel top = new JPanel();
-        JPanel input = new JPanel(new FlowLayout());
-        JLabel t1 = new JLabel("Enter your name ");
-        JTextField inputName = new JTextField(15);
-
-        JButton b1 = new JButton("START");
-        b1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                frame.removeAll();
-                frame.setVisible(false);
-                main();
-            }
-        });
-
-        input.add(t1);
-        input.add(inputName);
-        input.add(b1);
-        top.add(input);
-
-        frame.getContentPane().add(top);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-
-    }
-
+    
     public void  main(){
 
         JFrame frame = new JFrame("PokémonGame");
