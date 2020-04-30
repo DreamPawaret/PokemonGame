@@ -82,10 +82,7 @@ public abstract  class Pokemon {
     }
 
     public boolean feed(int food){
-        /*if(maxHP == curHP){
 
-
-        curHP = curHP+10;*/
         if (maxHP == curHP) {
             return false;
         } else {

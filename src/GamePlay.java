@@ -65,6 +65,6 @@ public class GamePlay {
         trainerPlay.setPokemon(index, pokemon);
         return fd;
     }
-    
+
 
 }
