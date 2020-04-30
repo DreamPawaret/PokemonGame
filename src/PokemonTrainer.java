@@ -25,21 +25,21 @@ public abstract class PokemonTrainer {
         return bag.size();
     }
 
-    public Pokemon getPokemon(int index){
-        return bag.get(index);
+    public Pokemon getPokemon(int n){
+        return bag.get(n);
     }
 
-    public void setPokemon(int index,Pokemon monster){
-        bag.remove(index);
-        bag.add(index,monster);
+    public void setPokemon(int n,Pokemon monster){
+        bag.remove(n);
+        bag.add(n,monster);
     }
 
     public void addPokemon(Pokemon monster){
         bag.add(monster);
     }
 
-    public void rmPokemon(int index){
-        bag.remove(index);
+    public void rmPokemon(int n){
+        bag.remove(n);
     }
 
 

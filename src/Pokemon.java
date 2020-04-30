@@ -6,12 +6,11 @@ public abstract  class Pokemon {
     protected String type;
     protected int curHP;
     protected int maxHP;
-    protected int upHP;
     protected int cp;
     protected int maxCP;
     protected int atk;
     protected int def;
-    protected String pPath;
+    protected String path;
 
     public void Pokemon(String name,String trainer, int hp, int atk, int def) {
         this.name = name;
@@ -19,7 +18,6 @@ public abstract  class Pokemon {
         this.trainer = trainer;
         maxHP = hp;
         curHP = hp;
-        upHP = hp*2;
         this.atk = atk;
         this.def = def;
     }
@@ -30,10 +28,6 @@ public abstract  class Pokemon {
 
     public void setName(String name){
         this.name = name;
-    }
-
-    public String getType(){
-        return type;
     }
 
     public String toString(){
@@ -54,14 +48,6 @@ public abstract  class Pokemon {
 
     public int getMaxHP(){
         return maxHP;
-    }
-
-    public int getUpHP(){
-        return upHP;
-    }
-
-    public void fullHP(){
-        curHP = maxHP;
     }
 
     public int getCp(){
