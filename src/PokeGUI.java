@@ -11,6 +11,17 @@ public class PokeGUI extends JFrame {
     public void start(){
         JFrame frame = new JFrame("PokémonGame");
 
+        Container c = getContentPane();
+        c.setLayout(new BoxLayout(c,BoxLayout.Y_AXIS));
+
+
+        JPanel p = new JPanel();
+        p.setLayout(new BoxLayout(p,BoxLayout.Y_AXIS));
+
+        JLabel pic = new JLabel(new ImageIcon("img/trainer.gif"));
+        p.add(pic);
+
+
         JLabel t1 = new JLabel();
         t1.setText("PokémonGame");
         t1.setBounds(10,20,400,100);
@@ -69,7 +80,7 @@ public class PokeGUI extends JFrame {
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                p6.removeAll();
+                //p6.removeAll();
                 //p6.add(pokedex());
             }
         });
@@ -147,7 +158,6 @@ public class PokeGUI extends JFrame {
         p6.add(p5);
         p6.add(p3);
         p6.add(b5);
-
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(375,667);
@@ -243,8 +253,6 @@ public class PokeGUI extends JFrame {
     }
 
     private JPanel shop(){
-
-        JFrame frame = new JFrame();
 
         JLabel t1 = new JLabel();
         t1.setText("Shop");
@@ -348,25 +356,6 @@ public class PokeGUI extends JFrame {
         b1.setText("Back");
         b1.setFont(new java.awt.Font("Tahoma",1,18));
 
-        frame.add(t1);
-        frame.add(t2);
-        frame.add(t3);
-        frame.add(t4);
-        frame.add(t5);
-        frame.add(t6);
-        frame.add(b1);
-        frame.add(b2);
-        frame.add(b3);
-        frame.add(b4);
-        frame.add(b5);
-        frame.add(b6);
-
-        frame.setSize(375,667);
-        frame.setLayout(null);
-        frame.setLocationRelativeTo(null);
-        frame.setResizable(false);
-        frame.setVisible(true);
-
     }
 
     private JPanel status(){
@@ -463,7 +452,7 @@ public class PokeGUI extends JFrame {
 
     }
 
-    public void pikachu(){
+    private JPanel pikachu(){
 
         JFrame frame = new JFrame();
 
@@ -520,7 +509,7 @@ public class PokeGUI extends JFrame {
 
     }
 
-    public void balbasaur(){
+    private JPanel balbasaur(){
 
         JFrame frame = new JFrame();
 
@@ -576,7 +565,7 @@ public class PokeGUI extends JFrame {
 
     }
 
-    public void charmander(){
+    private JPanel charmander(){
 
         JFrame frame = new JFrame();
 
@@ -632,7 +621,7 @@ public class PokeGUI extends JFrame {
 
     }
 
-    public void squirtle(){
+    private JPanel squirtle(){
 
         JFrame frame = new JFrame();
 
@@ -688,7 +677,7 @@ public class PokeGUI extends JFrame {
 
     }
 
-    public void magikarp(){
+    private JPanel magikarp(){
 
         JFrame frame = new JFrame();
 

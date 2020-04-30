@@ -1,19 +1,18 @@
 public class Trainer extends PokemonTrainer {
-    private int coin;
+    private int money = 2000;
     private int food;
     protected String path;
 
     public Trainer(String name){
         this.name = name;
-
     }
 
-    public int getCoin(){
-        return coin;
+    public int getMoney(){
+        return money;
     }
 
-    public void decCoin(int n) {
-        coin -= n;
+    public void decMoney(int n) {
+        money -= n;
     }
 
     public int getFood(){
