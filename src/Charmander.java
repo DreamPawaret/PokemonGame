@@ -1,12 +1,8 @@
 public class Charmander extends Pokemon {
 
     public Charmander(String name){
-        Pokemon("Charmander",52,243);
+        Pokemon("Charmander",trainer,143,43, 25);
     }
-
-    /*public void attack(Pokemon enermy){
-        System.out.println("Pokemon " + getName() + " attack " + enermy.getName());
-    }*/
 
 }
 

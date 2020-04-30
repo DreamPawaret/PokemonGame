@@ -1,7 +1,7 @@
 public class Squirtle extends Pokemon {
 
     public Squirtle(String name){
-        Pokemon("Squirtle",88,649);
+        Pokemon("Squirtle",trainer,249,28,36);
     }
 
 }

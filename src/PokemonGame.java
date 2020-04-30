@@ -4,7 +4,7 @@ public class PokemonGame {
         //System.out.println("Hello Pokemon");
 
         PokeGUI main = new PokeGUI();
-        main.start();
+        main.main();
 
     }
 }

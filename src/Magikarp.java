@@ -1,7 +1,7 @@
 public class Magikarp extends Pokemon{
 
     public Magikarp(String name){
-        Pokemon("Magikarp",51, 111);
+        Pokemon("Magikarp",trainer,111, 11, 35);
     }
 
 }

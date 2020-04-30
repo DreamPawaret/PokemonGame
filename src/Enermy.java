@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class Enermy extends Trainer {
 
-public class Enermy {
+
+    public Pokemon get(){
+        return getPokemon(0);
+    }
+    
+    public void set(Pokemon enermy){
+
+    }
 }

@@ -1,7 +1,7 @@
 public class Pikachu extends Pokemon{
 
     public Pikachu(String name){
-        Pokemon("Pikachu",77,492);
+        Pokemon("Pikachu",trainer,141,77,49);
     }
 
 }

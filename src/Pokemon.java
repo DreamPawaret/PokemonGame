@@ -1,60 +1,100 @@
 import java.lang.*;
 
 public abstract  class Pokemon {
-    private String name;
-    private String trainer;
-    private int hp;
-    private int maxHP;
-    private int cp;
-    private int maxCP;
-    private int atk;
-    private int def;
+    protected String name;
+    protected String trainer;
+    protected String type;
+    protected int curHP;
+    protected int maxHP;
+    protected int upHP;
+    protected int cp;
+    protected int maxCP;
+    protected int atk;
+    protected int def;
+    protected String pPath;
 
-    public void Pokemon(String name, int hp, int cp) {
+    public void Pokemon(String name,String trainer, int hp, int atk, int def) {
         this.name = name;
-        this.name = trainer;
-        //this.hp = (int)(Math.random()*100*hp);
-        this.cp = (int)(Math.random()*50*cp);
-        System.out.println("Pokemon: "+name+" hp:"+hp+" cp:"+cp);
+        this.type = name;
+        this.trainer = trainer;
+        maxHP = hp;
+        curHP = hp;
+        upHP = hp*2;
+        this.atk = atk;
+        this.def = def;
     }
 
-    public void Trainer(){
-
-    }
-
-    public String getStatus(){
-        return name+" "+hp;
-    }
     public String getName(){
         return name;
     }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getType(){
+        return type;
+    }
+
     public String toString(){
         return name;
     }
+
     public String getTrainer(){
         return trainer;
     }
-    public int getHp(){
-        return hp;
+
+    public void setTrainer(){
+        this.trainer = trainer;
     }
+
+    public int getCurHPHp(){
+        return curHP;
+    }
+
+    public int getMaxHP(){
+        return maxHP;
+    }
+
+    public int getUpHP(){
+        return upHP;
+    }
+
+    public void fullHP(){
+        curHP = maxHP;
+    }
+
     public int getCp(){
         return cp;
     }
 
-    public void damage(int atk){
-        atk = atk-this.def;
-        int currentHP = hp - atk;
-        if(currentHP >= 0)
-            this.hp = currentHP;
-        else
-            this.hp = 0;
+    public int getAtk(){
+        return atk;
     }
 
-    public void feed(){
-        if(maxHP == hp){
+    public void damage(int atk){
+        atk = atk-this.def;
+        int currentHP = curHP - atk;
+        if(currentHP >= 0)
+            this.curHP = currentHP;
+        else
+            this.curHP = 0;
+    }
 
+    public boolean feed(int food){
+        /*if(maxHP == curHP){
+
+
+        curHP = curHP+10;*/
+        if (maxHP == curHP) {
+            return false;
+        } else {
+            curHP = curHP +food;
+            if (curHP > maxHP) {
+                curHP = maxHP;
+            }
+            return true;
         }
-        hp = hp+10;
     }
 
 }
