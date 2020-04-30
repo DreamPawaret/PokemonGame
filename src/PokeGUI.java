@@ -7,9 +7,52 @@ import java.awt.event.ActionListener;
 public class PokeGUI extends JFrame {
 
     private GamePlay game;
-    
-    public void  main(){
 
+    public void start(){
+        JFrame frame = new JFrame("PokémonGame");
+
+        JLabel t1 = new JLabel();
+        t1.setText("PokémonGame");
+        t1.setBounds(10,20,400,100);
+        t1.setFont(new java.awt.Font("Tahoma",1,45));
+
+        JButton b1 = new JButton();
+        b1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.setVisible(false);
+                System.exit(0);
+            }
+        });
+        b1.setBounds(29,580,300,40);
+        b1.setText("Quit Game");
+        b1.setFont(new java.awt.Font("Tahoma",1,18));
+
+        JButton b2 = new JButton();
+        b2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.setVisible(false);
+                main();
+            }
+        });
+        b2.setBounds(29,480,300,40);
+        b2.setText("Start Game");
+        b2.setFont(new java.awt.Font("Tahoma",1,18));
+
+        frame.add(t1);
+        frame.add(b1);
+        frame.add(b2);
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(375,667);
+        frame.setLayout(null);
+        frame.setLocationRelativeTo(null);
+        frame.setResizable(false);
+        frame.setVisible(true);
+    }
+
+    private void main(){
         JFrame frame = new JFrame("PokémonGame");
 
         JPanel p6 = new JPanel();
@@ -26,8 +69,8 @@ public class PokeGUI extends JFrame {
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //frame.setVisible(false);
-                pokedex();
+                p6.removeAll();
+                //p6.add(pokedex());
             }
         });
         //b1.setBounds(20,480,150,40);
@@ -38,7 +81,7 @@ public class PokeGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //frame.setVisible(false);
-                item();
+                //item();
             }
         });
         //b2.setBounds(20,530,150,40);
@@ -54,7 +97,7 @@ public class PokeGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //frame.setVisible(false);
-                battle();
+                //battle();
             }
         });
         //b3.setBounds(190,480,150,40);
@@ -65,7 +108,7 @@ public class PokeGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //frame.setVisible(false);
-                shop();
+                //shop();
             }
         });
         //b4.setBounds(190,530,150,40);
@@ -105,16 +148,18 @@ public class PokeGUI extends JFrame {
         p6.add(p3);
         p6.add(b5);
 
+
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(375,667);
         frame.setLayout(null);
+        frame.getContentPane().add(p6, BorderLayout.CENTER);
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setVisible(true);
 
     }
 
-    public void pokedex(){
+    /*private JPanel pokedex(){
 
         JFrame frame = new JFrame();
 
@@ -195,26 +240,9 @@ public class PokeGUI extends JFrame {
         b1.setText("Back");
         b1.setFont(new java.awt.Font("Tahoma",1,18));
 
-
-
-        frame.add(t1);
-        frame.add(b1);
-        frame.add(b2);
-        frame.add(b3);
-        frame.add(b4);
-        frame.add(b5);
-        frame.add(b6);
-
-        frame.setSize(375,667);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(null);
-        frame.setLocationRelativeTo(null);
-        frame.setResizable(false);
-        frame.setVisible(true);
-
     }
 
-    public void shop(){
+    private JPanel shop(){
 
         JFrame frame = new JFrame();
 
@@ -341,7 +369,7 @@ public class PokeGUI extends JFrame {
 
     }
 
-    public void status(){
+    private JPanel status(){
         JFrame frame = new JFrame();
 
         JLabel t1 = new JLabel();
@@ -371,7 +399,7 @@ public class PokeGUI extends JFrame {
         frame.setVisible(true);
     }
 
-    public void item(){
+    private JPanel item(){
 
         JFrame frame = new JFrame();
 
@@ -403,7 +431,7 @@ public class PokeGUI extends JFrame {
 
     }
 
-    public void battle(){
+    private JPanel battle(){
 
         JFrame frame = new JFrame();
 
@@ -714,6 +742,6 @@ public class PokeGUI extends JFrame {
         frame.setResizable(false);
         frame.setVisible(true);
 
-    }
+    }*/
 
 }
